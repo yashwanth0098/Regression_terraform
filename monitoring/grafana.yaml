@@ -1,19 +1,11 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Service
 metadata:
-  name: grafana
+  name: grafana-service
 spec:
-  replicas: 1
+  type: LoadBalancer
   selector:
-    matchLabels:
-      app: grafana
-  template:
-    metadata:
-      labels:
-        app: grafana
-    spec:
-      containers:
-        - name: grafana
-          image: grafana/grafana
-          ports:
-            - containerPort: 3000
+    app: grafana
+  ports:
+    - port: 80
+      targetPort: 3000

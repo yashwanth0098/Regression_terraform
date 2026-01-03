@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: house-price
+      app: house-price-mlops
   template:
     metadata:
       labels:
-        app: house-price
+        app: house-price-mlops
     spec:
       containers:
-        - name: ml-container
-          image: <ECR_URI>:latest
+        - name: name
+          image: 551183203355.dkr.ecr.ap-south-1.amazonaws.com/house-price-mlops:latest
           ports:
             - containerPort: 8000

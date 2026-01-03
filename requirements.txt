@@ -4,3 +4,4 @@ joblib
 fastapi
 uvicorn
 prometheus-client
+python-multipart

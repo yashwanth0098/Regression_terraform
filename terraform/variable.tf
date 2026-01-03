@@ -7,17 +7,7 @@ variable "cluster_name" {
 }
 
 variable "cluster_version" {
-  default = "1.29"
-}
-
-variable "vpc_id" {
-  description = "VPC ID"
-  type        = string
-}
-
-variable "subnet_ids" {
-  description = "Subnet IDs"
-  type        = list(string)
+  default = "1.28"
 }
 
 variable "node_instance_type" {
