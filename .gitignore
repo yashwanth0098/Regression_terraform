@@ -1,0 +1,61 @@
+.env /
+# --------------------
+# Environment files
+# --------------------
+.env
+.env.*
+
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# --------------------
+# ML Artifacts
+# --------------------
+model/
+models/*.pkl
+models/*.joblib
+
+# --------------------
+# Logs
+# --------------------
+*.log
+
+# --------------------
+# OS files
+# --------------------
+.DS_Store
+Thumbs.db
+
+# --------------------
+# Terraform
+# --------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+# --------------------
+# Docker
+# --------------------
+*.tar
+
+# --------------------
+# Kubernetes
+# --------------------
+kubeconfig
+
+# --------------------
+# IDE
+# --------------------
+.vscode/
+.idea/
